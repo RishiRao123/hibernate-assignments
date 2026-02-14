@@ -63,4 +63,17 @@ public class Product {
     public boolean getIsActive() { return isActive; }
     public void setActive(boolean active) { this.isActive = active; }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "category='" + category + '\'' +
+                ", id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", quantity=" + quantity +
+                ", price=" + price +
+                ", sku='" + sku + '\'' +
+                ", isActive=" + isActive +
+                '}';
+    }
 }
