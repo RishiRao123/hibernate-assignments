@@ -1,12 +1,18 @@
+package org.raoamigos;
+
 import dao.ProductDAO;
 import entity.Product;
 
 import java.util.List;
 import java.util.Scanner;
-
-public class App {
-
-    public static void main(String[] args) {
+/**
+ * Hello world!
+ *
+ */
+public class App
+{
+    public static void main( String[] args )
+    {
 
         Scanner sc = new Scanner(System.in);
         ProductDAO dao = new ProductDAO();
@@ -66,7 +72,7 @@ public class App {
                 case 3:
                     List<Product> list = dao.getAll();
                     for (Product pr : list) {
-                        System.out.println(pr.getId() + " | " + pr.getName() + " | " + pr.getPrice());
+                        System.out.println(pr.getId() + " | " + pr.getName() + " | " + pr.getPrice() + " | " + pr.getIsActive());
                     }
                     break;
 
